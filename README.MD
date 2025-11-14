@@ -4,6 +4,8 @@ Este repositorio contiene una **maqueta funcional** de la página de inicio de u
 El objetivo es demostrar buenas prácticas de estructura, accesibilidad, responsividad y organización del código en un entorno estático.
 Todos los enlaces utilizan `#` para evitar navegación real, ya que el enfoque está únicamente en la presentación de la home.
 
+La página utilizada como base es esta: [https://inmovalley.com/](https://inmovalley.com/)
+
 ## Tecnologías utilizadas
 
 Versiones idénticas a las empleadas en el desarrollo:
@@ -116,3 +118,4 @@ Programador y creador de productos digitales.
 Puedes encontrarme en:
 * [Correo](mailto:marlosvinicius.info@gmail.com)
 * [LinkedIn](https://www.linkedin.com/in/mpiccinelli/)
+
