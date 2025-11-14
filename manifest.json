@@ -1,0 +1,17 @@
+{
+  "name": "InmoValley - Prueba de maquetación",
+  "short_name": "InmoValley",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#181d24",
+  "theme_color": "#181d24",
+  "description": "Prueba de maquetación para InmoValley utilizando HTML5, CSS3 y JavaScript.",
+  "icons": [
+    {
+      "src": "./assets/images/icon logo.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "lang": "es"
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.385" height="32.689" viewBox="0 0 32.385 32.689">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="Grupo_2991" transform="translate(-833.791 -467.896)">
+        <path id="Trazado_4685" d="M1019.716 548.128h2v18.048h-2z" class="cls-1" transform="translate(-170.734 -72.758)"/>
+        <path id="Trazado_4686" d="M910.281 657.563h18.048v2h-18.048z" class="cls-1" transform="translate(-69.322 -174.169)"/>
+        <path id="Línea_484" d="M3.958 5.56L-.721.693.721-.693 5.4 4.174z" class="cls-1" transform="translate(860.497 495.025)"/>
+        <path id="Elipse_182" d="M15.192-1a16.192 16.192 0 0 1 11.45 27.642 16.192 16.192 0 0 1-22.9-22.9A16.086 16.086 0 0 1 15.192-1zm0 30.384A14.192 14.192 0 0 0 25.228 5.157 14.192 14.192 0 0 0 5.157 25.228a14.1 14.1 0 0 0 10.035 4.157z" class="cls-1" transform="translate(834.791 468.896)"/>
+    </g>
+</svg>

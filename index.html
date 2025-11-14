@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="robots" content="index, follow">
+
+   <meta name="description" content="Sitio de prueba de maquetación para InmoValley, inmobiliaria.">
+   <meta name="keywords" content="Inmobiliaria, Propiedades, Venta, Alquiler, Pisos, Chalets, Apartamentos">
+   <meta name="author" content="InmoValley">
+   <meta name="theme-color" content="#181d24">
+
+   <link rel="canonical" href="https://www.inmovalley.com/">
+
+   <link rel="icon" href="./assets/images/icon_logo.svg" type="image/svg+xml">
+   <link rel="icon" href="./assets/images/icon_logo.png" sizes="32x32" type="image/png">
+   <link rel="apple-touch-icon" href="./assets/images/icon_logo.png">
+
+   <link rel="manifest" href="./manifest.json">
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap"
+      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Caveat:400,500,600&display=swap" rel="stylesheet">
+
+   <!-- Bootstrap 5 CSS CDN -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   <!-- Select2 CSS CDN -->
+   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+   <!-- Select2 Bootstrap 5 Theme -->
+   <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+
+   <!-- Custom Bootstrap Theme -->
+   <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
+
+   <!-- Custom Styles -->
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/animations.css">
+
+   <!-- Google reCAPTCHA -->
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+   <title>InmoValley - Prueba de maquetación</title>
+
+</head>
+
+<body class="position-relative animate-on-load anim-fade" data-delay="600">
+   <!-- Skip to Main Content Link -->
+   <a href="#main" class="visually-hidden-focusable">Saltar al contenido principal</a>
+
+   <!-- Header content-->
+   <header id="inicio" class="mp-header sticky-top" role="banner">
+      <div class="container h-100">
+         <div class="row h-100 align-items-center justify-content-between">
+
+            <!-- LEFT COLUMN (DESKTOP) / MENU PRINCIPAL -->
+            <div class="col-4 text-start order-lg-1 animate-on-load anim-slide-right" data-delay="800">
+               <div class="mp-header-left">
+
+                  <!-- Phone Number -->
+                  <div class="mp-header-phone mb-2 d-none d-lg-block">
+                     <a href="tel:966274206" class="mp-header-phone-link">966 274 206</a>
+                  </div>
+
+                  <!-- Mobile Menu-->
+                  <button class="btn mp-mobile-menu-toggle d-lg-none" data-bs-toggle="offcanvas"
+                     data-bs-target="#mpMobileMenu" aria-controls="mpMobileMenu" aria-label="Abrir menú móvil">
+                     <img src="assets/images/icon_menu_mobile.svg" alt="" class="mp-icon-menu">
+                  </button>
+
+                  <!-- Main Navigation Menu -->
+                  <nav class="mp-main-nav d-none d-lg-block" aria-label="Navegación principal" id="mainMenu">
+                     <ul class="list-inline mb-0">
+                        <li class="list-inline-item mp-main-nav-item mp-link-active">
+                           <a href="#inicio" class="mp-main-nav-link link">Inicio</a>
+                        </li>
+
+                        <li class="list-inline-item mp-main-nav-item d-lg-none">
+                           <a href="#empresa" class="mp-main-nav-link link">Empresa</a>
+                        </li>
+
+                        <li class="list-inline-item mp-main-nav-item dropdown">
+                           <a id="dropdownPropiedades" href="#propiedades" class="mp-main-nav-link link"
+                              data-bs-toggle="dropdown" aria-expanded="false">Propiedades</a>
+                           <ul class="dropdown-menu px-0 bg-dark" aria-labelledby="dropdownPropiedades">
+                              <li><a class="dropdown-item link" href="#">Ver todas las propiedades</a></li>
+                              <li><a class="dropdown-item link" href="#">Alquiler a largo plazo</a></li>
+                              <li><a class="dropdown-item link" href="#">Nueva construcción</a></li>
+                              <li><a class="dropdown-item link" href="#">Venta</a></li>
+                           </ul>
+                        </li>
+
+                        <li class="list-inline-item mp-main-nav-item d-lg-none">
+                           <a href="#servicios" class="mp-main-nav-link link">Servicios</a>
+                        </li>
+
+                        <li class="list-inline-item mp-main-nav-item">
+                           <a href="#vender-su-propiedad" class="mp-main-nav-link link">Vender</a>
+                        </li>
+
+                        <li class="list-inline-item mp-main-nav-item d-lg-none">
+                           <a href="#noticias" class="mp-main-nav-link link">Blog</a>
+                        </li>
+
+                        <li class="list-inline-item mp-main-nav-item d-lg-none">
+                           <a href="#contacto" class="mp-main-nav-link link">Contactar</a>
+                        </li>
+
+                        <li class="list-inline-item mp-main-nav-item d-lg-none">
+                           <a href="#favoritos" class="mp-main-nav-link link">
+                              <img src="assets/images/icon_heart_fill.svg" alt="Favoritos" class="img-fluid">
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+
+            <!-- CENTER COLUMN / LOGO -->
+            <div class="col-4 text-center order-lg-2 animate-on-load anim-slide-down" data-delay="900">
+               <a href="#inicio" class="mp-header-logo d-inline-block">
+                  <img src="assets/images/logo_header.svg" alt="InmoValley Inmobiliaria" class="img-fluid">
+               </a>
+            </div>
+
+            <!-- RIGHT COLUMN (DESKTOP) / CONTACT + LANGUAGE + SECONDARY MENU -->
+            <div class="col-4 text-end order-lg-3 text-lg-end animate-on-load anim-slide-left" data-delay="800">
+               <div class="mp-header-right d-flex flex-column gap-2">
+                  <!-- Contact + language + Facebook -->
+                  <div class="d-flex justify-content-end align-items-center gap-3 mp-header-info">
+                     <!-- Email -->
+                     <div class="d-none d-lg-inline-block mp-header-email">
+                        <a href="mailto:info@inmovalley.com" class="mp-header-email-link">info@inmovalley.com</a>
+                     </div>
+                     <div class="row g-2 align-items-center mp-header-actions">
+                        <!-- Language Selector -->
+                        <div class="d-inline-block col-6 col-lg-auto mp-header-lang">
+                           <div class="dropdown mp-language-dropdown">
+                              <button id="mpLanguageDropdown"
+                                 class="btn btn-dark dropdown-toggle p-0 bg-transparent border-0 mp-language-toggle"
+                                 type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <img src="./assets/images/esp_flag.svg" alt="Español" class="mp-language-flag">
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end mp-language-menu bg-dark"
+                                 aria-labelledby="mpLanguageDropdown">
+                                 <li>
+                                    <a class="dropdown-item" href="#en">
+                                       <img src="./assets/images/eng_flag.svg" alt="English"
+                                          class="me-2 mp-language-flag">
+                                       <span>English</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#fr">
+                                       <img src="./assets/images/fra_flag.svg" alt="Français"
+                                          class="me-2 mp-language-flag">
+                                       <span>Français</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+
+                        <!-- Search -->
+                        <div class="d-lg-none col-6 mp-header-social">
+                           <a href="#busqueta-avanzada" class="mp-header-search-link" title="Search">
+                              <img src="assets/images/icon_search.svg" alt="Search"
+                                 class="img-fluid mp-header-search-icon">
+                           </a>
+                        </div>
+
+                        <!-- Facebook -->
+                        <div class="d-none d-lg-inline-block col-lg-auto mp-header-social">
+                           <a href="https://www.facebook.com/inmovalleynew" target="_blank" rel="noopener noreferrer"
+                              class="mp-header-facebook-link" title="Facebook">
+                              <img src="assets/images/icon_facebook.svg" alt="Facebook"
+                                 class="img-fluid mp-header-facebook-icon">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Secondary Navigation Menu -->
+                  <nav class="d-none d-lg-inline-block mp-secondary-nav text-nowrap" aria-label="Navegación secundaria">
+                     <ul class="list-inline d-inline">
+                        <li class="list-inline-item mp-secondary-nav-item">
+                           <a href="#valora-tu-propiedad" class="mp-secondary-nav-link link">Valora tu propiedad</a>
+                        </li>
+                        <li class="list-inline-item mp-secondary-nav-item">
+                           <a href="#contacto" class="mp-secondary-nav-link link">Contactar</a>
+                        </li>
+                        <li class="list-inline-item mp-secondary-nav-item">
+                           <a href="#favoritos" class="mp-secondary-nav-link link">
+                              <img src="assets/images/icon_heart_fill.svg" alt="Favoritos"
+                                 class="img-fluid mp-header-heart-icon">
+                           </a>
+                        </li>
+                     </ul>
+                     <div class="d-inline-block text-white ps-2 mp-header-menu">
+                        <a href="#mp-main-menu" class="d-inline-block link mp-menu-button">
+                           <img src="assets/images/icon_menu.svg" alt="Menú" class="me-2">
+                           Menú
+                        </a>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- Mobile Offcanvas Menu -->
+   <div class="offcanvas offcanvas-start mp-mobile-offcanvas" tabindex="-1" id="mpMobileMenu"
+      aria-labelledby="mpMobileMenuLabel">
+
+      <div class="offcanvas-header">
+         <h5 class="visually-hidden" id="mpMobileMenuLabel">Menú</h5>
+         <button type="button" class="text-reset btn p-0" data-bs-dismiss="offcanvas" aria-label="Cerrar">
+            <img src="assets/images/icon_close.svg" alt="Cerrar menú" class="mp-icon-close">
+         </button>
+      </div>
+
+      <div class="offcanvas-body p-0" id="mp-mobile-menu-body">
+         <!-- jQuery menu insert-->
+      </div>
+
+   </div>
+
+   <!-- Floating "Valora tu propiedad" Link -->
+   <a class="bg-primary px-3 py-1 d-inline-block text-white fw-semibold text-decoration-none mp-link-float shadow animate-on-load anim-fade"
+      href="#valora-tu-propiedad/" data-delay="3200">
+      <small>
+         Valora tu propiedad
+      </small>
+   </a>
+
+   <!-- Main Content -->
+   <main id="main" role="main">
+      <!-- HERO SECTION -->
+      <section class="mp-hero animate-on-load anim-fade" data-delay="100">
+         <div class="container mp-hero-container">
+            <div
+               class="row h-100 align-items-end justify-content-center align-content-center mp-hero-row align-content-md-end">
+               <div class="col-md-6 col-lg-7">
+                  <div class="title animate-on-load anim-slide-right" data-delay="1200">
+                     INMO <span>VALLEY</span>
+                  </div>
+                  <a id="toSearch" class="d-none d-lg-block animate-on-load anim-grow " data-delay="1500" href="#search"
+                     aria-label="Ir al formulario de búsqueda">
+                     <img src="./assets/images/icon_feather_arrow_down_circle.svg" alt="INMO VALLEY, Siempre a tu lado">
+                  </a>
+               </div>
+               <div class="col-md-6 col-lg-5 align-self-md-end animate-on-load anim-slide-left" data-delay="1200">
+                  <div class="subtitle">
+                     Siempre a tu lado
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="mp-hero-footer">
+         </div>
+      </section>
+      <!-- SEARCH SECTION -->
+      <section id="search" class=" bg-dark mt-0 mt-lg-5 py-2 py-lg-5 mp-search" aria-labelledby="search-title">
+         <div class="container" data-delay="1000">
+            <h2 id="search-title" class="visually-hidden">Busca tu propiedad</h2>
+            <div class="row p-2 p-lg-0 g-2 g-lg-0 animate-on-scroll anim-slide-up" data-delay="200">
+               <div class="col-12 col-lg p-0">
+                  <label for="estado" class="visually-hidden">Estado</label>
+                  <select id="estado" class="form-select mp-select w-100" data-placeholder="Estado">
+                     <option></option>
+                     <option value="larga-temporada">Alquiler a largo plazo</option>
+                     <option value="nueva-construccion">Nueva construcción</option>
+                     <option value="venta">Venta</option>
+                  </select>
+               </div>
+               <div class="col-6 col-lg p-0 pe-1 pe-lg-0">
+                  <label for="tipo" class="visually-hidden">Tipo</label>
+                  <select id="tipo" class="form-select mp-select w-100" data-placeholder="Tipo" multiple>
+                     <option></option>
+                     <option value="adosado">Adosado</option>
+                     <option value="apartamento">Apartamento</option>
+                     <option value="atico">Ático</option>
+                     <option value="casa">Casa</option>
+                  </select>
+               </div>
+               <div class="col-6 col-lg p-0 ps-1 ps-lg-0">
+                  <label for="poblacion" class="visually-hidden">Población</label>
+                  <select id="poblacion" class="form-select mp-select w-100" data-placeholder="Población" multiple>
+                     <option></option>
+                     <option value="alicante">Alicante</option>
+                     <option value="elche">Elche</option>
+                     <option value="benidorm">Benidorm</option>
+                  </select>
+               </div>
+               <div class="col-6 col-lg p-0 pe-1 pe-lg-0">
+                  <label for="zona" class="visually-hidden">Zona</label>
+                  <select id="zona" class="form-select mp-select w-100" data-placeholder="Zona" multiple>
+                     <option></option>
+                     <option value="algoda">Algoda</option>
+                     <option value="altabix">Altabix</option>
+                     <option value="asilo-pisos-azules">Asilo - Pisos Azules</option>
+                  </select>
+               </div>
+               <div class="col-6 col-lg p-0 ps-1 ps-lg-0">
+                  <label for="precio-hasta" class="visually-hidden">Precio hasta</label>
+                  <select id="precio-hasta" class="form-select mp-select w-100" data-placeholder="Precio hasta">
+                     <option></option>
+                     <option value="500">500 €</option>
+                     <option value="1000">1.000 €</option>
+                     <option value="1500">1.500 €</option>
+                     <option value="2000">2.000 €</option>
+                  </select>
+               </div>
+               <div class="col-6 col-lg p-0 d-none d-lg-block">
+                  <label for="referencia" class="visually-hidden">Referencia</label>
+                  <input id="referencia" type="text" class="form-control w-100" placeholder="Referencia">
+               </div>
+               <div class="col-12 col-lg-2 p-0 d-flex gap-2">
+                  <button type="button"
+                     class="btn btn-acento fw-bold d-lg-none w-50 flex-fill wrap-ellipsis reset-filters">
+                     <img src="assets/images/icon_eraser.svg" alt="" class="me-2 d-none d-lg-inline">
+                     Limpiar Filtros
+                  </button>
+                  <button
+                     class="btn btn-secondary mt-lg-0 fw-bold d-flex justify-content-center align-items-center w-50 flex-fill"
+                     type="button" aria-label="Buscar propiedades">
+                     <img src="assets/images/icon_search.svg" alt="" class="me-2 d-none d-lg-inline">
+                     Buscar
+                  </button>
+               </div>
+            </div>
+            <div class="row g-0 p-0 mt-2 d-none advanced-search-section">
+               <div class="col-5">
+                  <div class="row g-0 p-0">
+                     <div class="col p-0">
+                        <label for="precio-desde" class="visually-hidden">Precio desde</label>
+                        <select id="precio-desde" class="form-select mp-select w-100" data-placeholder="Precio desde">
+                           <option></option>
+                           <option value="500">500 €</option>
+                           <option value="1000">1.000 €</option>
+                           <option value="1500">1.500 €</option>
+                           <option value="2000">2.000 €</option>
+                        </select>
+                     </div>
+                     <div class="col p-0">
+                        <label for="banos" class="visually-hidden">Baños</label>
+                        <select id="banos" class="form-select mp-select w-100" data-placeholder="Baños">
+                           <option></option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                        </select>
+                     </div>
+                     <div class="col p-0">
+                        <div class="mp-custom-check">
+                           <input class="mp-custom-check-input" type="checkbox" id="piscina" value="piscina">
+                           <label class="mp-custom-check-label" for="piscina">
+                              <span class="mp-custom-check-text">Piscina</span>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row d-none d-lg-flex mt-3 mp-extras animate-on-scroll anim-slide-down" data-delay="200">
+               <div class="col-6 d-flex p-0">
+                  <button type="button" class="btn btn-acento w-50 fw-bold reset-filters">
+                     <img src="assets/images/icon_eraser.svg" alt="" class="me-2 d-none d-lg-inline">
+                     Limpiar Filtros
+                  </button>
+                  <button type="button" class="btn btn-primary w-50 fw-bold advanced-search-btn">
+                     <img src="assets/images/icon_advanced_search.svg" alt="" class="me-2 d-none d-lg-inline">
+                     Busqueta Avanzada
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section id="categories" class="mp-categories py-0 pb-0 pb-lg-5" aria-labelledby="categories-title">
+         <h2 id="categories-title" class="visually-hidden">Elige tu futuro</h2>
+         <div class="bg-dark categories-home">
+            <div id="categories-banners" class="categories-banner-container">
+
+               <!-- Background Images -->
+               <img class="category-banner category-banner-01 img-fluid img-fondo active"
+                  src="./assets/images/cat_1.jpg" alt="Pisos en Elche">
+               <img class="category-banner category-banner-02 img-fluid img-fondo" src="./assets/images/cat_2.jpg"
+                  alt="Chalets en Elche">
+               <img class="category-banner category-banner-03 img-fluid img-fondo" src="./assets/images/cat_3.jpg"
+                  alt="Apartamentos Santa Pola">
+
+               <!-- Caption -->
+               <div class="categories-caption">
+                  <h3 class="animate-on-scroll anim-fade" data-delay="300">Elige tu futuro</h3>
+               </div>
+
+               <!-- Logo -->
+               <div class="categories-logo mt-5">
+                  <img src="./assets/images/icon_logo.svg" alt="InmoValley Inmobiliaria" height="78"
+                     class="animate-on-scroll anim-fade" data-delay="600">
+               </div>
+
+               <!-- Category Cards -->
+               <div class="categories-list">
+                  <div class="container">
+                     <div class="row justify-content-center">
+
+                        <!-- Category 1: Pisos -->
+                        <div class="col-12 col-md-4 animate-on-scroll anim-slide-right" data-delay="1200">
+                           <a href="#pisos-en-elche/" class="category-card" data-banner="category-banner-01">
+                              <div class="category-overlay"></div>
+                              <div class="category-header">
+                                 <div class="category-accent-bar category-accent-top"></div>
+                                 <div class="d-flex flex-column">
+                                    <span class="category-title">Pisos en Elche</span>
+                                    <div class="category-arrow">
+                                       <img src="./assets/images/arrow_right.svg" alt="Ver categoría">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="category-footer">
+                                 <div class="category-accent-bar category-accent-bottom"></div>
+                                 <span class="category-count">11 <strong>Propiedades</strong></span>
+                              </div>
+                           </a>
+                        </div>
+
+                        <!-- Category 2: Chalets -->
+                        <div class="col-12 col-md-4 animate-on-scroll anim-slide-right" data-delay="900">
+                           <a href="#chalets-en-elche/" class="category-card" data-banner="category-banner-02">
+                              <div class="category-overlay"></div>
+                              <div class="category-header">
+                                 <div class="category-accent-bar category-accent-top"></div>
+                                 <div class="d-flex flex-column">
+                                    <span class="category-title">Chalets en Elche</span>
+                                    <div class="category-arrow">
+                                       <img src="./assets/images/arrow_right.svg" alt="Ver categoría">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="category-footer">
+                                 <div class="category-accent-bar category-accent-bottom"></div>
+                                 <span class="category-count">7 <strong>Propiedades</strong></span>
+                              </div>
+                           </a>
+                        </div>
+
+                        <!-- Category 3: Apartamentos -->
+                        <div class="col-12 col-md-4 animate-on-scroll anim-slide-right" data-delay="600">
+                           <a href="#apartamentos-santa-pola/" class="category-card" data-banner=" category-banner-03">
+                              <div class="category-overlay"></div>
+                              <div class="category-header">
+                                 <div class="category-accent-bar category-accent-top"></div>
+                                 <div class="d-flex flex-column">
+                                    <span class="category-title">Apartamentos<br>Santa Pola</span>
+                                    <div class="category-arrow">
+                                       <img src="./assets/images/arrow_right.svg" alt="Ver categoría">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="category-footer">
+                                 <div class="category-accent-bar category-accent-bottom"></div>
+                                 <span class="category-count">1 <strong>Propiedades</strong></span>
+                              </div>
+                           </a>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <div class="bg-custom-featured ">
+         <!-- Featured Property Section -->
+         <section id="featured-property" class="mp-featured-property py-0 pt-0 pt-lg-5"
+            aria-labelledby="featured-title">
+            <h2 id="featured-title" class="visually-hidden">Propiedad del mes</h2>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <h2 class="featured-title text-center py-4 pb-5 animate-on-scroll anim-slide-up" data-delay="600">
+                        <span>Propiedad</span> <br><strong>Del mes</strong>
+                     </h2>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-12 p-0">
+                     <a href="#/propiedad/p-1182/piso/venta/espana/alicante/elche/porcelanosa/"
+                        class="featured-property-link text-decoration-none d-block">
+
+                        <div class="featured-property-container">
+                           <!-- Imagem Principal -->
+                           <div class="featured-property-image">
+                              <img src="./assets/images/property_month.jpg" alt="Piso - Venta - Elche - Porcelanosa"
+                                 class="featured-property-bg animate-on-scroll anim-slide-right" data-delay="900">
+                           </div>
+
+                           <!-- Card de Informações -->
+                           <div class="featured-property-card animate-on-scroll anim-slide-left" data-delay="900">
+                              <!-- Referência -->
+                              <div class="featured-property-ref">REF: P-1182</div>
+
+                              <!-- Botão Favoritos -->
+                              <button class="featured-property-heart" aria-label="Añadir a favoritos">
+                                 <img src="./assets/images/icon_heart_outline.svg" alt="Favoritos" class="heart-icon">
+                              </button>
+
+                              <!-- Informações da Propriedade -->
+                              <div class="featured-property-info">
+                                 <div class="featured-property-type-operation">
+                                    <h3 class="featured-property-type">Piso</h3>
+                                    <span class="featured-property-operation">Venta</span>
+                                 </div>
+
+                                 <div class="featured-property-location">Elche · Porcelanosa</div>
+
+                                 <div class="featured-property-details">
+                                    <span>120 m² · 3 Habitaciones · 2 Baños</span>
+                                    <span>Piscina · Garaje</span>
+                                 </div>
+
+                                 <div class="featured-property-price">285.000 €</div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Sell Your Property Section -->
+         <section id="sell-property" class="mp-sell-property pb-0" aria-labelledby="sell-title">
+            <h2 id="sell-title" class="visually-hidden">Vende tu propiedad</h2>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 col-md-6 order-md-first order-last">
+
+                     <img src="./assets/images/icon_logo_2.svg"
+                        class="img-fluid mb-4 mb-lg-5 animate-on-scroll anim-slide-up" data-delay="600"
+                        alt="InmoValley Inmobiliaria">
+
+                     <h2 class="sell-title py-4 animate-on-scroll anim-slide-up" data-delay="900">
+                        <span>Vende tu propiedad</span><br>
+                        <strong>con nosotros</strong>
+                     </h2>
+
+                     <div class="row">
+                        <div class="col-lg-4 col-md-6 pe-md-0 d-grid">
+                           <a class="btn btn-primary mt-3 mt-lg-5 py-3 py-lg-2 fw-bold animate-on-scroll anim-slide-right"
+                              data-delay="1200" href="#vender-su-propiedad/">
+                              Quiero vender
+                           </a>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="col-lg-4 col-md-6 order-md-last order-first mb-3 mb-lg-0 ">
+                     <img src="./assets/images/image_sell.jpg" data-delay="1200"
+                        class="img-fluid  animate-on-scroll anim-slide-left"
+                        alt="Vende tu propiedad con InmoValley Inmobiliaria">
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <!-- Highlighted Properties Section -->
+      <section id="highlighted-properties" class="mp-highlighted-properties pb-0" aria-labelledby="highlighted-title">
+         <h2 id="highlighted-title" class="visually-hidden">Propiedades destacadas</h2>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h2 class="highlighted-title text-center py-4 animate-on-scroll anim-fade" data-delay="900">
+                     <span> Propiedades </span> <strong> Destacadas</strong>
+                  </h2>
+               </div>
+            </div>
+            <div id="highlighted-properties-row" class="row g-2 g-lg-4 pt-5">
+
+               <!-- Property Card 1 -->
+               <div class="col-12 col-lg-6 animate-on-scroll anim-slide-down" data-delay="600">
+                  <article class="property-card">
+                     <div class="property-card-image">
+                        <img src="./assets/images/property_1.jpg" alt="Chalet en Elche - Bonavista"
+                           class="property-card-bg">
+                        <div class="property-card-ref">REF: CH-265</div>
+                        <button class="property-card-heart" aria-label="Añadir a favoritos">
+                           <img src="./assets/images/icon_heart_outline.svg" alt="Favoritos" class="heart-icon">
+                        </button>
+                     </div>
+                     <div class="property-card-content">
+                        <div class="row">
+                           <div class="col-12 col-lg-6 d-flex align-items-center justify-content-between">
+                              <div class="property-card-details">
+                                 <div class="property-card-info">
+                                    <h3 class="property-card-type">Chalet</h3>
+                                    <span class="property-card-operation">Venta</span>
+                                 </div>
+                                 <div class="property-card-location">ELCHE · BONAVISTA</div>
+                                 <div class="property-card-price">365.000 €</div>
+                              </div>
+                              <div class="d-none d-lg-flex" style="height: 80%;">
+                                 <div class="vr"></div>
+                              </div>
+                           </div>
+                           <div class="col-12 col-lg-6 d-flex align-items-center justify-content-between">
+                              <div class="property-card-features d-flex flex-column ">
+                                 <ul class="list-inline mb-0 d-flex flex-wrap justify-content-lg-end">
+                                    <li>
+                                       <span> <strong>194</strong> m<sup>2</sup></span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="m2p"> <strong>2.475</strong>
+                                          m<sup>2</sup></span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="beds"> <strong>4</strong> Hab</span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="baths"><strong>2</strong> Baños
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span> <strong>Piscina</strong></span>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                  </article>
+               </div>
+               <!-- Property Card 2 -->
+               <div class="col-12 col-lg-6 animate-on-scroll anim-slide-down" data-delay="900">
+                  <article class="property-card">
+                     <div class="property-card-image">
+                        <img src="./assets/images/property_2.jpg" alt="Chalet en Elche - Bonavista"
+                           class="property-card-bg">
+                        <div class="property-card-ref">REF: CH-265</div>
+                        <button class="property-card-heart" aria-label="Añadir a favoritos">
+                           <img src="./assets/images/icon_heart_outline.svg" alt="Favoritos" class="heart-icon">
+                        </button>
+                     </div>
+                     <div class="property-card-content">
+                        <div class="row">
+                           <div class="col-12 col-lg-6 d-flex align-items-center justify-content-between">
+                              <div class="property-card-details">
+                                 <div class="property-card-info">
+                                    <h3 class="property-card-type">Chalet</h3>
+                                    <span class="property-card-operation">Venta</span>
+                                 </div>
+                                 <div class="property-card-location">ELCHE · BONAVISTA</div>
+                                 <div class="property-card-price">365.000 €</div>
+                              </div>
+                              <div class="d-none d-lg-flex" style="height: 80%;">
+                                 <div class="vr"></div>
+                              </div>
+                           </div>
+                           <div class="col-12 col-lg-6 d-flex align-items-center justify-content-between">
+                              <div class="property-card-features d-flex flex-column ">
+                                 <ul class="list-inline mb-0 d-flex flex-wrap justify-content-lg-end">
+                                    <li>
+                                       <span> <strong>194</strong> m<sup>2</sup></span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="m2p"> <strong>2.475</strong>
+                                          m<sup>2</sup></span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="beds"> <strong>4</strong> Hab</span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="baths"><strong>2</strong> Baños
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span> <strong>Piscina</strong></span>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                  </article>
+               </div>
+               <!-- Property Card 3 -->
+               <div class="col-12 col-lg-6 animate-on-scroll anim-slide-down" data-delay="1200">
+                  <article class="property-card">
+                     <div class="property-card-image">
+                        <img src="./assets/images/property_3.jpg" alt="Chalet en Elche - Bonavista"
+                           class="property-card-bg">
+                        <div class="property-card-ref">REF: CH-265</div>
+                        <button class="property-card-heart" aria-label="Añadir a favoritos">
+                           <img src="./assets/images/icon_heart_outline.svg" alt="Favoritos" class="heart-icon">
+                        </button>
+                     </div>
+                     <div class="property-card-content">
+                        <div class="row">
+                           <div class="col-12 col-lg-6 d-flex align-items-center justify-content-between">
+                              <div class="property-card-details">
+                                 <div class="property-card-info">
+                                    <h3 class="property-card-type">Chalet</h3>
+                                    <span class="property-card-operation">Venta</span>
+                                 </div>
+                                 <div class="property-card-location">ELCHE · BONAVISTA</div>
+                                 <div class="property-card-price">365.000 €</div>
+                              </div>
+                              <div class="d-none d-lg-flex" style="height: 80%;">
+                                 <div class="vr"></div>
+                              </div>
+                           </div>
+                           <div class="col-12 col-lg-6 d-flex align-items-center justify-content-between">
+                              <div class="property-card-features d-flex flex-column ">
+                                 <ul class="list-inline mb-0 d-flex flex-wrap justify-content-lg-end">
+                                    <li>
+                                       <span> <strong>194</strong> m<sup>2</sup></span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="m2p"> <strong>2.475</strong>
+                                          m<sup>2</sup></span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="beds"> <strong>4</strong> Hab</span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="baths"><strong>2</strong> Baños
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span> <strong>Piscina</strong></span>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                  </article>
+               </div>
+               <!-- Property Card 4 -->
+               <div class="col-12 col-lg-6 animate-on-scroll anim-slide-down" data-delay="1500">
+                  <article class="property-card">
+                     <div class="property-card-image">
+                        <img src="./assets/images/property_4.jpg" alt="Chalet en Elche - Bonavista"
+                           class="property-card-bg">
+                        <div class="property-card-ref">REF: CH-265</div>
+                        <button class="property-card-heart" aria-label="Añadir a favoritos">
+                           <img src="./assets/images/icon_heart_outline.svg" alt="Favoritos" class="heart-icon">
+                        </button>
+                     </div>
+                     <div class="property-card-content">
+                        <div class="row">
+                           <div class="col-12 col-lg-6 d-flex align-items-center justify-content-between">
+                              <div class="property-card-details">
+                                 <div class="property-card-info">
+                                    <h3 class="property-card-type">Chalet</h3>
+                                    <span class="property-card-operation">Venta</span>
+                                 </div>
+                                 <div class="property-card-location">ELCHE · BONAVISTA</div>
+                                 <div class="property-card-price">365.000 €</div>
+                              </div>
+                              <div class="d-none d-lg-flex" style="height: 80%;">
+                                 <div class="vr"></div>
+                              </div>
+                           </div>
+                           <div class="col-12 col-lg-6 d-flex align-items-center justify-content-between">
+                              <div class="property-card-features d-flex flex-column ">
+                                 <ul class="list-inline mb-0 d-flex flex-wrap justify-content-lg-end">
+                                    <li>
+                                       <span> <strong>194</strong> m<sup>2</sup></span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="m2p"> <strong>2.475</strong>
+                                          m<sup>2</sup></span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="beds"> <strong>4</strong> Hab</span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span class="baths"><strong>2</strong> Baños
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <small>·</small> <span> <strong>Piscina</strong></span>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                  </article>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="mp-about pt-0" aria-labelledby="about-title">
+         <h2 id="about-title" class="visually-hidden">Sobre Nosotros</h2>
+         <div class="container-fluid px-xl-0">
+
+            <row class="mp-about-row gx-0 animate-on-scroll anim-fade" data-delay="600">
+               <div class="col-12 d-flex justify-content-center mt-5 mb-5 ">
+                  <a href="#propiedades/" class="wp-btn-about align-items-center">
+                     <span>Ver todas las propiedades</span>
+                     <img src="./assets/images/icon_feather_plus_circle.svg" alt="Más Noticias" class="news-plus-icon">
+                  </a>
+               </div>
+            </row>
+
+            <div class="row px-xl-0 mx-xl-0">
+
+               <div class="col-xl-4 col-lg-5 ps-xl-0 animate-on-scroll anim-slide-left" data-delay="600">
+                  <img src="./assets/images/about_1.jpg" class="fit" alt="Sobre Nosotros InmoValley">
+               </div>
+
+               <div class="col-xl-4 col-lg-6 col-md-9 offset-lg-1 animate-on-scroll anim-slide-down" data-delay="900">
+
+                  <div class="text-start">
+                     <img src="./assets/images/icon_logo_2.svg" class="img-fluid mb-5 mt-3 logo-about"
+                        alt="InmoValley Inmobiliaria">
+                     <h4 class="text-primary text-uppercase lh-base fs-5 mb-5">
+                        Bienvenido a nuestra Inmobiliaria.
+                        Inmovalley fue fundada en Elche en el año 2005, dedicada a la intermediación inmobiliaria,
+                        contando sus componentes con más de veinte años de experiencia en el sector inmobiliario.
+                     </h4>
+                     <p>
+                        Desde su apertura, con una primera oficina en la C/ Filet de Fora en Elche (Alicante), la
+                        empresa se ha volcado en la gestión de compraventas y arrendamientos de inmuebles en Elche y sus
+                        alrededores. En estos años, la confianza de nuestros clientes así como la profesionalidad de
+                        nuestros asesores ha ido creciendo constantemente.
+                     </p>
+                  </div>
+
+                  <a href="#sobre-nosotros/" class="btn btn-outline-primary fw-bold py-3 px-5 mt-4">Más sobre
+                     nosotros</a>
+
+               </div>
+               <div class="col-xl-2 offset-xl-1 pe-xl-0 col-md-3 d-none d-lg-block animate-on-scroll anim-slide-right"
+                  data-delay="900">
+                  <img src="./assets/images/about_2.jpg" class="fit" alt="Sobre Nosotros InmoValley">
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <!-- News Section -->
+      <section id="news" class="mp-news py-5 bg-light" aria-labelledby="news-title">
+         <div class="container h-100 py-5">
+            <div class="row h-100">
+               <!-- Título Rotacionado -->
+               <div
+                  class="col-lg-1 pe-lg-0 col-xl-2 col-12 text-lg-start text-center align-items-end d-flex justify-content-center">
+                  <h2 class="news-title animate-on-scroll anim-slide-down" data-delay="600">Últimas
+                     <strong>Noticias</strong>
+                  </h2>
+               </div>
+
+               <!-- Ícone + -->
+               <div
+                  class="col-lg-2 py-4 py-lg-0 px-lg-5 px-xl-4 align-items-end d-flex justify-content-center justify-content-xl-start animate-on-scroll anim-slide-down"
+                  data-delay="900">
+                  <a href="#noticias" class="news-plus-link pb-3">
+                     <img src="./assets/images/icon_feather_plus_2_circle.svg" alt="Más Noticias"
+                        class="news-plus-icon">
+                  </a>
+               </div>
+
+               <!-- Cards Container -->
+               <div class="col-lg-9 col-xl-8 h-100">
+                  <div class="row g-4 h-100">
+
+                     <!-- Card 1 -->
+                     <div class="col-md-6 h-100 animate-on-scroll anim-slide-down" data-delay="1200">
+                        <a href="#noticia-1" class="news-card h-100 text-decoration-none d-block"
+                           data-href="#noticia-1">
+                           <article class="h-100">
+                              <div class="news-card-image">
+                                 <img src="./assets/images/news_1.jpg" alt="Noticia 1" class="news-card-bg">
+                              </div>
+                              <div class="news-card-overlay"></div>
+                              <div class="news-card-accent-bar"></div>
+                              <div class="news-card-content">
+                                 <time class="news-card-date">27 JUN 2025</time>
+                                 <h3 class="news-card-title">
+                                    ¿CUÁNTO TE CUESTA PONER TU INMUEBLE A UN PRECIO POR ENCIMA DEL MERCADO? TE LO
+                                    DECIMOS
+                                    CON DATOS, NO
+                                    CON SUPOSICIONES
+                                 </h3>
+                              </div>
+                              <div class="news-card-arrow">
+                                 <img src="./assets/images/arrow_right.svg" alt="Leer más" class="news-arrow-img">
+                              </div>
+                           </article>
+                        </a>
+                     </div>
+
+                     <!-- Card 2 -->
+                     <div class="col-md-6 h-100 animate-on-scroll anim-slide-down" data-delay="1500">
+                        <a href="#noticia-2" class="news-card h-100 text-decoration-none d-block"
+                           data-href="#noticia-2">
+                           <article class="h-100">
+                              <div class="news-card-image">
+                                 <img src="./assets/images/news_2.jpg" alt="Noticia 2" class="news-card-bg">
+                              </div>
+                              <div class="news-card-overlay"></div>
+                              <div class="news-card-accent-bar"></div>
+                              <div class="news-card-content">
+                                 <time class="news-card-date">14 MAY 2025</time>
+                                 <h3 class="news-card-title">
+                                    CÓMO VENDER TU INMUEBLE SIN INTERMEDIARIOS Y EVITAR LAS LLAMADAS DE AGENCIAS
+                                 </h3>
+                              </div>
+                              <div class="news-card-arrow">
+                                 <img src="./assets/images/arrow_right.svg" alt="Leer más" class="news-arrow-img">
+                              </div>
+                           </article>
+                        </a>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Parallax Image Section -->
+      <section id="parallax-block" class="block-parallax">
+         <img src="./assets/images/final_background.jpg" alt="Imagen Parallax" class="img-parallax" data-speed="-1.2">
+      </section>
+
+      <!-- Form contact section -->
+      <section id="contact" class="mp-contact py-5 bg-primary" aria-labelledby="contact-title">
+         <div class="container pb-5 pt-4">
+            <h2 id="contact-title" class="visually-hidden">Contacta con nosotros</h2>
+            <div class="container">
+               <div class="row justify-content-center">
+
+                  <div class="col-md-8 col-lg-6">
+                     <div class="contact-form">
+                        <h3 class="contact-title text-center py-4 mb-5 animate-on-scroll anim-slide-down"
+                           data-delay="900">
+                           CONTACTA <strong><em>Con</em></strong> NOSOTROS
+                        </h3>
+
+                        <form action="#" id="contactFootForm" method="post" role="form"
+                           class="needs-validation animate-on-scroll anim-slide-up" data-delay="1200" novalidate>
+
+                           <!-- Name Input -->
+                           <div class="mb-3">
+                              <input type="text" class="form-control" name="name" id="name" placeholder="TU NOMBRE *"
+                                 autocomplete="name" required>
+                              <div class="invalid-feedback">
+                                 Por favor, ingrese su nombre.
+                              </div>
+                           </div>
+
+                           <!-- Phone and Email Row -->
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <div class="mb-3">
+                                    <input type="tel" class="form-control" name="telefono" id="telefono"
+                                       placeholder="TU TELÉFONO" autocomplete="tel">
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="mb-3">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                       placeholder="TU EMAIL *" autocomplete="email" required>
+                                    <div class="invalid-feedback">
+                                       Por favor, ingrese un email válido.
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <!-- Message Textarea -->
+                           <div class="mb-3">
+                              <textarea name="comment" id="comment" class="form-control" rows="3"
+                                 placeholder="MENSAJE *" required></textarea>
+                              <div class="invalid-feedback">
+                                 Por favor, ingrese su mensaje.
+                              </div>
+                           </div>
+
+                           <!-- GDPR Checkbox -->
+                           <div class="mp-custom-check-dark mb-5 mt-5 mb-lg-2 mt-lg-4">
+                              <input class="mp-custom-check-input" type="checkbox" id="lpd" value="lpd" required>
+                              <div class="d-flex flex-column">
+                                 <label class="mp-custom-check-label" for="lpd">
+                                    <span class="mp-custom-check-text text-uppercase text-justify">
+                                       Marque la casilla para contactarnos y acepte que
+                                       su información se use de acuerdo con nuestra <a href="#privacidad/"
+                                          class="text-light text-uppercase fst-normal" target="_blank"
+                                          rel="noopener noreferrer">
+                                          Política de
+                                          privacidad
+                                       </a> que se agregará automáticamente a nuestra lista de correo, pero puede
+                                       cancelarla en cualquier momento*</span>
+                                 </label>
+                              </div>
+                           </div>
+
+                           <!-- Google reCAPTCHA -->
+                           <div class="mt-3 d-flex flex-column justify-content-center align-items-center">
+                              <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                              <div class="invalid-feedback d-block text-center" id="recaptcha-error"
+                                 style="display: none !important;">
+                                 Por favor, complete el reCAPTCHA.
+                              </div>
+                           </div>
+
+                           <div class="d-grid col-lg-8 offset-lg-2">
+                              <button type="submit" class="btn btn-dark my-3 py-3">Enviar</button>
+                           </div>
+
+                           <!-- GDPR Info -->
+                           <div class="gdpr">
+                              <b>Responsable del tratamiento:</b> Valley Agentes Asociados SL,
+                              <b>Finalidad del tratamiento:</b> Gestión y control de los servicios ofrecidos a través
+                              de
+                              la página Web
+                              de Servicios inmobiliarios, Envío de información a traves de newsletter y otros,
+                              <b>Legitimación:</b> Por consentimiento,
+                              <b>Destinatarios:</b> No se cederan los datos, salvo para elaborar contabilidad,
+                              <b>Derechos de las personas interesadas:</b> Acceder, rectificar y suprimir los datos,
+                              solicitar la
+                              portabilidad de los mismos, oponerse altratamiento y solicitar la limitación de éste,
+                              <b>Procedencia de los datos: </b> El Propio interesado,
+                              <b>Información Adicional: </b> Puede consultarse la información adicional y detallada
+                              sobre protección de
+                              datos <a href="#privacidad/" target="_blank" rel="noopener noreferrer">Aquí</a>.
+                           </div>
+                        </form>
+
+                     </div>
+
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Details Contact Section -->
+      <section id="contact-details" class="mp-contact-details py-5 bg-dark animate-on-scroll anim-fade"
+         data-delay="1500" aria-labelledby="contact-datails-title">
+         <div class="container pt-5">
+            <h2 id="contact-datails-title" class="visually-hidden">Detalles de contacto</h2>
+            <div class="container">
+               <div class="row mb-5">
+                  <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-4 offset-lg-4">
+                     <img src="./assets/images/logo_header.svg" alt="InmoValley Real Estate"
+                        class="img-fluid mx-auto d-block logo">
+                  </div>
+               </div>
+               <div class="bottom-comunication pb-4 pb-lg-5">
+                  <div class="contact-detail text-center">
+                     <div>
+                        <p>
+                           <a href="tel:966274206" class="mp-contact-phone-link">966 274 206</a>
+                        </p>
+                        <p>
+                           <a href="mailto:info@inmovalley.com" class="mp-contact-email-link">info@inmovalley.com</a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mb-4">
+                  <div class="col-12 text-center">
+                     <ul class="nav-footer bottom-menu mb-0 pl-0">
+                        <li class="list-inline-item active"><a href="#inicio" class="link mp-link-active">Inicio</a>
+                        </li>
+                        <li class="list-inline-item hide-header"><a href="#sobre-nosotros/" class="link">Empresa</a>
+                        </li>
+                        <li class="dropdown list-inline-item mp-propiedades-footer">
+                           <a href="#propiedades" class="link" role="button" data-bs-toggle="dropdown"
+                              id="dropdownMenuFooterPropiedades" aria-haspopup="true"
+                              aria-expanded="false">Propiedades</a>
+                           <ul class="dropdown-menu p-0 bg-primary" aria-labelledby="dropdownMenuFooterPropiedades">
+                              <li class="dropdown-item">
+                                 <a href="#propiedades/" class="link">Ver todas las propiedades</a>
+                              </li>
+                              <li class="dropdown-item"><a href="#propiedades-alquiler-a-largo-plazo/"
+                                    class="link">Alquiler a largo
+                                    plazo</a>
+                              </li>
+                              <li class="dropdown-item"><a href="#propiedades-nueva-construccion/" class="link">Nueva
+                                    construcción
+                                 </a></li>
+                              <li class="dropdown-item"><a href="#propiedades-venta/" class="link">Venta</a></li>
+                           </ul>
+                        </li>
+                        <li class="list-inline-item link"><a href="#servicios/" class="link">Servicios</a></li>
+                        <li class="list-inline-item link"><a href="#vender-su-propiedad/" class="link">Vender</a></li>
+                        <li class="list-inline-item link"><a href="#noticias/" class="link">Blog</a></li>
+                        <li class="list-inline-item link "><a href="#contacto/" class="link">Contactar</a></li>
+                        <li class="list-inline-item">
+                           <a href="#favoritos" class="link">
+                              <img src="assets/images/icon_heart_fill.svg" alt="Favoritos"
+                                 class="img-fluid mp-header-heart-icon">
+                           </a>
+                        </li>
+
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="row pb-5 pt-3">
+                  <div class="col-12 text-center">
+                     <div class="row g-4 align-items-center justify-content-center">
+                        <!-- Language Selector -->
+                        <div class="col-auto mp-header-lang">
+                           <div class="dropdown mp-language-dropdown">
+                              <button id="mpLanguageDropdown"
+                                 class="btn btn-dark dropdown-toggle p-0 bg-transparent border-0 mp-language-toggle"
+                                 type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <img src="./assets/images/esp_flag.svg" alt="Español" class="mp-language-flag">
+                              </button>
+                              <ul class="dropdown-menu mp-language-menu bg-dark" aria-labelledby="mpLanguageDropdown">
+                                 <li>
+                                    <a class="dropdown-item" href="#en">
+                                       <img src="./assets/images/eng_flag.svg" alt="English"
+                                          class="me-2 mp-language-flag">
+                                       <span>English</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#fr">
+                                       <img src="./assets/images/fra_flag.svg" alt="Français"
+                                          class="me-2 mp-language-flag">
+                                       <span>Français</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+
+                        <!-- Facebook -->
+                        <div class="col-auto mp-header-social">
+                           <a href="https://www.facebook.com/inmovalleynew" target="_blank" rel="noopener noreferrer"
+                              class="mp-header-facebook-link" title="Facebook">
+                              <img src="assets/images/icon_facebook.svg" alt="Facebook"
+                                 class="img-fluid mp-header-facebook-icon">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!-- Footer -->
+   <footer role="contentinfo" class="mp-footer bg-primary text-white py-4">
+      <div class="container">
+         <div class="row justify-content-between align-items-center flex-wrap">
+            <div class="footer-left col-8 text-md-left">
+               <p class="m-0 text-center">
+                  <span>© 2025 INMOVALLEY • </span>
+                  <a href="#nota-legal" class="text-white text-decoration-none">Nota legal</a>
+                  <span> • </span>
+                  <a href="#privacidad" class="text-white text-decoration-none">Privacidad</a>
+                  <span> • </span>
+                  <a href="#cookies" class="text-white text-decoration-none">Cookies</a>
+                  <span> • </span>
+                  <a href="#mapa-web" class="text-white text-decoration-none">Mapa Web</a>
+               </p>
+            </div>
+            <div class="footer-right col-4 text-md-right">
+               <p class="text-center m-0">
+                  <span>Diseño: </span>
+                  <strong>MEDIAELX</strong>
+               </p>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- jQuery CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+   <!-- Bootstrap 5 JS CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+
+   <!-- Select2 JS CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+   <!-- Custom JS -->
+   <script src="assets/js/script.js"></script>
+   <script src="assets/js/animations.js"></script>
+</body>
+
+</html>
